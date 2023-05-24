@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
+    <title>Daftar Coding</title>
+</head>
+<body style="background-color: rgb(160, 147, 147);">
+    <form method="post" action="Pemograman_Web.html">
+        <table>
+            <tr>
+                <td>Nama: </td>
+                <td><input type="text" id="nama" name="nama" required placeholder="Nama Panggilan" class="form-control form-control-lg"></td>
+            </tr>
+            <tr>
+                <td>Nomor Telepon: </td>
+                <td><input type="text" id="phone" name="phone" pattern="[0-9]{12}" class="form-control form-control-sm"> </td>
+            </tr>
+            <tr>
+                <td>Nim Anda: </td>
+                <td><input type="number" id="Nim" name="Nim" class="form-control "> </td>
+            </tr>
+            <tr>
+                <td>Alamat:</td>
+                <td><input type="alamat" name="alamat" required class="form-control"> </td>
+            </tr>
+            <tr>
+                <td>Tangal Lahir: </td>
+                <td><input type="date" id="TTl" name="TTl" > </td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin: </td> 
+                <td >
+                    <input type="radio" id="Pria" name="kelamin" value="1" class="form-check-input"> 
+                    <label for="Pria" class="form-check-label">Laki-laki</label>
+                    <input type="radio" id="Wanita" name="kelamin" value="2" class="form-check-input"> 
+                    <label for="Wanita" class="form-check-label">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td> Prodi</td>
+                <td>
+                    <input type="radio" id="html" name="daftar" value="1" class="form-check-input" >
+                    <label for="html" class="form-check-label" > Teknik Informatika </label>
+                    <input type="radio" id="css" name="daftar" value="2" class="form-check-input">
+                    <label for="css" class="form-check-label"> Teknik Electro </label>
+                    <input type="radio" id="javascript" name="daftar" value="1" class="form-check-input">
+                    <label for="javascript" class="form-check-label"> Teknik Mesin </label>
+                    <input type="radio" id="PHP" name="daftar" value="2" class="form-check-input">
+                    <label for="PHP" class="form-check-label"> Sistem Informasi </label>
+                </td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td>Alasan anda mau mendaftar</td>
+                <td><textarea name="komentar" required id="komentar" cols="60" rows="4"></textarea> </td>
+            </tr>
+        </table>
+        <input type="submit" value="Kirim" class="btn btn-success" style="width: 200px; margin-left: 420px;">
+    </form> 
+</body>
+</html>
